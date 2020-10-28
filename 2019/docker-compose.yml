@@ -3,7 +3,7 @@ version: '2'
 services:
   db:
     build: .
-    image: amana-mssql2017:latest
+    image: amana-mssql2019:latest
     environment:
       ACCEPT_EULA: Y
       SA_PASSWORD: 2astazeY
@@ -12,4 +12,4 @@ services:
       # MSSQL_PASSWORD: vat
     ports:
        - "1433:1433"
-    container_name: mssql2017
+    container_name: mssql2019
